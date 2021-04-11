@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectAllFilms, fetchFilms } from "./filmsSlice";
-import FilmsList from "./FilmsList";
+import { selectAllFilms, fetchFilms } from "../features/films/filmsSlice";
+import FilmsList from "../features/films/FilmsList";
 
 export default function HomePage() {
   const dispatch = useDispatch();

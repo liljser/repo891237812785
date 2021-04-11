@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchCharacterById, selectCharacterById } from "./charactersSlice";
-import { selectFilmsByCharacter } from "./filmsSlice";
-import FilmsList from "./FilmsList";
+import {
+  fetchCharacterById,
+  selectCharacterById
+} from "../features/characters/charactersSlice";
+import { selectFilmsByCharacter } from "../features/films/filmsSlice";
+import FilmsList from "../features/films/FilmsList";
 
 export default function CharacterPage() {
   const [loading, setLoading] = useState(true);

@@ -6,14 +6,16 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-import HomePage from "./HomePage";
-import FilmPage from "./FilmPage";
-import CharacterPage from "./CharacterPage";
+import HomePage from "./pages/HomePage";
+import FilmPage from "./pages/FilmPage";
+import CharacterPage from "./pages/CharacterPage";
 
 export default function App() {
   return (
     <Router>
-      <Link to="/">Home</Link>
+      <nav>
+        <Link to="/">Home</Link>
+      </nav>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/films/:filmId" component={FilmPage} />

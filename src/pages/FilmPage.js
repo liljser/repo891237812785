@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { selectFilmById, fetchFilmById } from "./filmsSlice";
-import { selectCharactersByFilm } from "./charactersSlice";
-import Film from "./Film";
+import { selectFilmById, fetchFilmById } from "../features/films/filmsSlice";
+import { selectCharactersByFilm } from "../features/characters/charactersSlice";
+import Film from "../features/films/Film";
 
 export default function FilmPage() {
   const [loading, setLoading] = useState(true);

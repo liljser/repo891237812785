@@ -1,11 +1,10 @@
-import { createEntityAdapter } from "@reduxjs/toolkit";
-
 function promiseDelay(cb) {
   return new Promise((resolve, reject) => {
     // setTimeout(reject("Fetch failure"), 3000);
     setTimeout(resolve, 600);
   }).then(cb);
 }
+
 const characters = [
   {
     id: 1,

@@ -5,8 +5,8 @@ import {
   createSelector
 } from "@reduxjs/toolkit";
 
-import api from "./api";
-import { fetchCharactersByIds } from "./charactersSlice";
+import api from "../../app/api";
+import { fetchCharactersByIds } from "../characters/charactersSlice";
 
 const entityAdapter = createEntityAdapter();
 

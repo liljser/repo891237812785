@@ -4,8 +4,8 @@ import {
   createEntityAdapter,
   createSelector
 } from "@reduxjs/toolkit";
-import api from "./api";
-import { fetchFilmsByIds } from "./filmsSlice";
+import api from "../../app/api";
+import { fetchFilmsByIds } from "../films/filmsSlice";
 
 const entityAdapter = createEntityAdapter();
 

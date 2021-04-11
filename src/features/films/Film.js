@@ -1,5 +1,5 @@
 import React from "react";
-import EntityDetailsList from "./EntityDetailsList";
+import EntityDetailsList from "../../components/EntityDetailsList";
 
 export default function Film({ title, characters }) {
   return (
